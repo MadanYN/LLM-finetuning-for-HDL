@@ -1,4 +1,4 @@
-# LLM-finetuning-for-HDL
+# LLM-for-HDL
 
 Objectives :
   1. Fine tune GPT-2 125M for VHDL code generation and summarization
