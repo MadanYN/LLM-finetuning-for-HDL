@@ -6,7 +6,7 @@ Objectives :
   3. Fine tune a bigger model Llama 3B for VHDL code genaration and summarization and compare its performance with that of GPT-2
 
 VHDL stands for VHSIC Hardware Description Language (yeah VHSIC is also an acronym🙂). It is a language used by hardware designers to synthesize digital hardware. <br>
-I used [AWfaw/ai-hdlcoder-dataset-clean](https://huggingface.co/datasets/AWfaw/ai-hdlcoder-dataset-clean) dataset from huggingface to get the webscrapped VHDL code. Training the code with just VHDL code would enable the model to learn the grammer of VHDL but that doesn't serve our purpose. So I took assistance from GPT-3.5 to generate the summary of a set of VHDL files which I would use as my dataset. The finetuned GPT-2 125M model is available [here](https://huggingface.co/myn11/gpt2_hdl) <br> <br>
+I used [AWfaw/ai-hdlcoder-dataset-clean](https://huggingface.co/datasets/AWfaw/ai-hdlcoder-dataset-clean) dataset from huggingface to get the webscrapped VHDL code. Training the code with just VHDL code would enable the model to learn the grammer of VHDL but that doesn't serve our purpose. So I took assistance from GPT-3.5 to generate the summary of a set of VHDL files which I would use as my dataset. The finetuned GPT-2 125M model and corresponding tokenizer is available [here](https://huggingface.co/myn11/gpt2_hdl) <br> <br>
 
 LLM_for_HDL.ipynb contains the data preprocessing, dataset generation and gpt-2 model fine tuning. In Gradio_App_GPT_2_HDL.ipynb I have built a gradion webapp to interact with the finetuned model. <br>
 
