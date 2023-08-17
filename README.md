@@ -17,4 +17,4 @@ One possibel reason can be that gpt-2 125M is too small a model to summarize and
 <br>
 <br>
 Llama-3B is too big a model to train in a single T100 GPU instance with 15GB RAM. So, I employed qLoRA (quantized low-rank adapters. paper - https://arxiv.org/abs/2305.14314v1) to train it.
-llama-3b.ipynb file has the code for fine tuning of llama-3b. As it can be seen in training details the llama-3b fine tuning clearly beats the gpt-2 and reasonably so.
+Llama-3b.ipynb file has the code for fine tuning of llama-3b. As it can be seen in training details the Llama-3b fine tuning clearly beats the gpt-2 and reasonably so.
